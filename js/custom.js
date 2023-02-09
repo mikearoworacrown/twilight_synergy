@@ -9,6 +9,42 @@ function collapse() {
   }
 }
 
+//Dropdown For Services
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+let dropdownContentServices = document.getElementById("dropdownContentServices");
+function dropdownServices() {
+  dropdownContentServices.classList.toggle("dropdown__show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.twilight__dropbtn-services')) {
+  let dropdownContentServices = document.getElementById("dropdownContentServices");
+    if (dropdownContentServices.classList.contains('dropdown__show')) {
+      dropdownContentServices.classList.remove('dropdown__show');
+    }
+  }
+}
+
+//Dropdown For Industries
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
+function dropdownIndustries() {
+  dropdownContentIndustries.classList.toggle("dropdown__show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.twilight__dropbtn-industries')) {
+  let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
+    if (dropdownContentIndustries.classList.contains('dropdown__show')) {
+      dropdownContentIndustries.classList.remove('dropdown__show');
+    }
+  }
+}
+
 //Javascript for image slider manual navigation
 var slides = document.querySelectorAll(".twilight__slides");
 var btns = document.querySelectorAll(".twilight__carousel-dot");
