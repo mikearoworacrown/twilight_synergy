@@ -74,6 +74,7 @@
 
 .twilight__navbar-toggler-icon {
     display: inline-block;
+    color: var(--purple-dark);
 }
 
 .twilight__navbar-collapse {
