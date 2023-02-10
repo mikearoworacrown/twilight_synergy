@@ -26,20 +26,23 @@ function dropdownIndustries() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+window.addEventListener('click', function(e){
   if(!e.target.matches('.twilight__dropbtn-services')) {
-    let dropdownContentServices = document.getElementById("dropdownContentServices");
-    if (dropdownContentServices.classList.contains('dropdown__services-show')) {
-      dropdownContentServices.classList.remove('dropdown__services-show');
-    }
+      let dropdownContentServices = document.getElementById("dropdownContentServices");
+      if (dropdownContentServices.classList.contains('dropdown__services-show')) {
+        dropdownContentServices.classList.remove('dropdown__services-show');
+      }
   }
+});
+
+window.addEventListener('click', function(e){
   if (!e.target.matches('.twilight__dropbtn-industries')) {
-  let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
-    if (dropdownContentIndustries.classList.contains('dropdown__industries-show')) {
-      dropdownContentIndustries.classList.remove('dropdown__industries-show');
-    }
+    let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
+      if (dropdownContentIndustries.classList.contains('dropdown__industries-show')) {
+        dropdownContentIndustries.classList.remove('dropdown__industries-show');
+      }
   }
-}
+});
 
 
 //Javascript for image slider manual navigation
