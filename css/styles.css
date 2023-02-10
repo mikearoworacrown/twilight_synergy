@@ -59,10 +59,6 @@
     color: var(--purple-dark);
 }
 
-.twilight__nav-link:hover {
-    color: var(--purple-light);
-}
-
 .twilight__navbar-toggler {
     padding: 0.4rem 0.5rem;
     line-height: 1;
@@ -93,11 +89,6 @@
     background-color: var(--purple-dark);
     color: #fff;
     font-weight: 700;
-}
-
-.twilight__navbar-collapse .twilight__nav-item:last-child a:hover{
-    background-color: #fff;
-    color: var(--purple-dark);
 }
 
 
@@ -135,11 +126,6 @@
     position: relative;
 }
 
-.twilight__dropdown-services .twilight__dropbtn-services:hover,
-.twilight__dropdown-industries .twilight__dropbtn-industries:hover  {
-    color: var(--purple-light);
-}
-
 .twilight__dropdown-services-content,
 .twilight__dropdown-industries-content {
     display: none;
@@ -170,10 +156,13 @@
     color: #fff;
 }
 
-.dropdown__show {
+.dropdown__services-show {
     display: block;
 }
 
+.dropdown__industries-show {
+    display: block;
+}
 /************************HOME SECTION***************************/
 .twilight__home{
     background: linear-gradient(to right, var(--gray-dark), var(--gray-light));
@@ -564,6 +553,18 @@
     }
     .twilight__carousel-caption {
         top: 15%;
+    }
+    .twilight__nav-link:hover {
+        color: var(--purple-light);
+    }
+    
+    .twilight__navbar-collapse .twilight__nav-item:last-child a:hover{
+        background-color: #fff;
+        color: var(--purple-dark);
+    }
+    .twilight__dropdown-services .twilight__dropbtn-services:hover,
+    .twilight__dropdown-industries .twilight__dropbtn-industries:hover  {
+        color: var(--purple-light);
     }
 }
 

@@ -14,17 +14,7 @@ function collapse() {
 toggle between hiding and showing the dropdown content */
 let dropdownContentServices = document.getElementById("dropdownContentServices");
 function dropdownServices() {
-  dropdownContentServices.classList.toggle("dropdown__show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.twilight__dropbtn-services')) {
-  let dropdownContentServices = document.getElementById("dropdownContentServices");
-    if (dropdownContentServices.classList.contains('dropdown__show')) {
-      dropdownContentServices.classList.remove('dropdown__show');
-    }
-  }
+  dropdownContentServices.classList.toggle("dropdown__services-show");
 }
 
 //Dropdown For Industries
@@ -32,18 +22,25 @@ window.onclick = function(e) {
 toggle between hiding and showing the dropdown content */
 let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
 function dropdownIndustries() {
-  dropdownContentIndustries.classList.toggle("dropdown__show");
+  dropdownContentIndustries.classList.toggle("dropdown__industries-show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
+  if(!e.target.matches('.twilight__dropbtn-services')) {
+    let dropdownContentServices = document.getElementById("dropdownContentServices");
+    if (dropdownContentServices.classList.contains('dropdown__services-show')) {
+      dropdownContentServices.classList.remove('dropdown__services-show');
+    }
+  }
   if (!e.target.matches('.twilight__dropbtn-industries')) {
   let dropdownContentIndustries = document.getElementById("dropdownContentIndustries");
-    if (dropdownContentIndustries.classList.contains('dropdown__show')) {
-      dropdownContentIndustries.classList.remove('dropdown__show');
+    if (dropdownContentIndustries.classList.contains('dropdown__industries-show')) {
+      dropdownContentIndustries.classList.remove('dropdown__industries-show');
     }
   }
 }
+
 
 //Javascript for image slider manual navigation
 var slides = document.querySelectorAll(".twilight__slides");
