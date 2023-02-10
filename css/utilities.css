@@ -512,7 +512,7 @@ p {
   
 .display-4 {
     font-size: calc(1.475rem + 2.7vw);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -523,7 +523,7 @@ p {
   
 .display-5 {
     font-size: calc(1.425rem + 2.1vw);
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.2;
 }
 @media (min-width: 1200px) {
